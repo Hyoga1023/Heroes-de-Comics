@@ -1,0 +1,39 @@
+*{
+    padding: 10px;
+    margin: 10px;
+}
+
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+.columna{
+    padding: 20px;
+    box-sizing: border-box;
+}
+.columna-izquierda{
+    width: 20%;
+    background-color: antiquewhite;
+}
+.columna-central{
+    width: 60%;
+    background-color: bisque;
+}
+.columna-derecha{
+    width: 20%;
+    background-color: aqua;
+}
+.titulo-izquierdo{
+    display: flex;
+    justify-content: center;
+}
+.titulo-principal{
+    display: flex;
+    justify-content: center;
+}
+.titulo-derecho{
+    display: flex;
+    justify-content: center;
+}
