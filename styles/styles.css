@@ -27,7 +27,7 @@ body {
 
 header {
     background-color: #333;
-    padding: 20px 0;
+    padding: 30px 10px;
     font-family: 'anime_ace';
     font-size: 2rem;
 }
@@ -47,7 +47,18 @@ a{
     text-decoration: none;
     color:aquamarine;
     padding: 0% 0% 0% 10%;
+    font-size: 1rem;
 }
+a:hover{
+    font-size: 1.5rem;
+}
+.a2{
+    font-size: 2rem;
+}
+.a2:hover{
+    font-size: 2.5rem;
+}
+
 nav {
     display: flex;
     justify-content: center;
@@ -55,8 +66,11 @@ nav {
 }
 
 nav a {
-    color: white;
+    color:yellow;
     text-decoration: none;
+}
+nav a:hover{
+    font-size: 2.1rem;
 }
 .contenedor-columnas {
     display: flex;
