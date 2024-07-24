@@ -1,39 +1,96 @@
-*{
-    padding: 10px;
-    margin: 10px;
+@font-face {
+    font-family:anime_ace;
+    src: url(/fuentes/anime_ace_bb/animeace2_bld.ttf);
+}
+@font-face {
+    font-family:Ka_blam;
+    src: url(/fuentes/ka_blam/Ka\ Blam.ttf);
+}
+@font-face{
+    font-family: Bazinga;
+    src: url(/fuentes/bazinga/Bazinga-Regular.otf);
 }
 
-body{
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
     display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     min-height: 100vh;
 }
-.columna{
-    padding: 20px;
-    box-sizing: border-box;
+
+header {
+    background-color: #333;
+    padding: 20px 0;
+    font-family: 'anime_ace';
 }
-.columna-izquierda{
-    width: 20%;
-    background-color: antiquewhite;
+img{
+    display: block;
+    width: 80%;
+    margin: auto;
+    padding: 40px;
 }
-.columna-central{
-    width: 60%;
-    background-color: bisque;
-}
-.columna-derecha{
-    width: 20%;
-    background-color: aqua;
-}
-.titulo-izquierdo{
+nav {
     display: flex;
     justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+.contenedor-columnas {
+    display: flex;
+    flex: 1;
+    gap: 5px;
+}
+
+.columna {
+    padding: 30px;
+    box-sizing: border-box;
+    font-family: 'anime_ace';
+}
+
+.columna-izquierda {
+    width: 20%;
+    background-color: black;
+    color: white;
+}
+
+.columna-central {
+    width: 60%;
+    background-color: white;
+}
+
+.columna-derecha {
+    width: 20%;
+    background-color: red;
+    color: white;
+}
+.logo{
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding: 40px;
 }
 .titulo-principal{
     display: flex;
     justify-content: center;
+    font-family: 'Bazinga';
+    font-size: 4rem;
+    color:black;
+    margin-bottom: 10px;
 }
-.titulo-derecho{
-    display: flex;
-    justify-content: center;
+
+
+.titulo-izquierdo,
+.titulo-derecho {
+    
 }
