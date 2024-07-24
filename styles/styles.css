@@ -29,12 +29,24 @@ header {
     background-color: #333;
     padding: 20px 0;
     font-family: 'anime_ace';
+    font-size: 2rem;
 }
 img{
     display: block;
-    width: 80%;
+    width: 70%;
     margin: auto;
     padding: 40px;
+}
+ul{
+    list-style-type: none;
+}
+ul li{
+    margin: 10%;
+}
+a{
+    text-decoration: none;
+    color:aquamarine;
+    padding: 0% 0% 0% 10%;
 }
 nav {
     display: flex;
@@ -92,5 +104,6 @@ nav a {
 
 .titulo-izquierdo,
 .titulo-derecho {
-    
+    display: flex;
+    justify-content: center;
 }
