@@ -24,6 +24,7 @@ body {
     padding: 0;
     min-height: 100vh;
     padding-bottom: 100px; /*borde inferor de la pagina*/
+    overflow-x: hidden; /*oculta el scroll al final de la pagina*/
 }
 
 header {
@@ -40,6 +41,48 @@ img{
 }
 strong {
     text-decoration: underline;
+}
+/* Definición de la animación */
+@keyframes scale-up {
+    0% {
+        transform: scale(1); /* Tamaño inicial */
+    }
+    50% {
+        transform: scale(1.2); /* Tamaño aumentado */
+    }
+    100% {
+        transform: scale(1); /* Tamaño final (vuelve al original) */
+    }
+}
+
+/* Estilos para el contenedor */
+.image-container {
+    background-color: blue; /* Color de fondo del contenedor */
+    padding: 0; /* Espaciado alrededor de la imagen */
+    width: 700px;
+    height: 700px;
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+    border-radius: 10px; /* Bordes redondeados del contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra del contenedor */
+    margin: 7% auto; /* Centra el contenedor en su contenedor padre */
+    position: relative; /* Necesario para manejar el desbordamiento */
+    overflow: visible; /* Permite que el contenido desborde el contenedor */
+}
+
+/* Estilos para la imagen */
+.scale-effect {
+    animation: scale-up 2s ease-in-out; /* Nombre de la animación, duración y tipo de transición */
+    display: block;
+    max-width: none; /* Permite que la imagen se desborde del contenedor */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    position: absolute; /* Permite que la imagen se posicione libremente dentro del contenedor */
+    width: 800px;
+    transition: width 0.5s ease-in-out; /* Transición suave para el cambio de tamaño */
+}
+.scale-effect:hover{
+    width: 1000px;
 }
 ul{
     list-style-type: none;
@@ -151,12 +194,13 @@ p{
     padding: 10px; /* Opcional: Agrega espacio interior */
     background-size: 550%;
 }
+.logo {
+    width: 95%;
+    transition: transform 0.3s ease;
+}
 
-.logo{
-    display: block;
-    width: 100%;
-    margin: auto;
-    padding: 40px;
+.logo:hover {
+    transform: rotate(10deg); /* Rote la imagen 10 grados */
 }
 .titulo-principal{
     display: flex;
@@ -193,4 +237,31 @@ p{
 }
 .scroll-to-top:hover {
     background-color: #0056b3; /* Color de fondo al pasar el mouse sobre el botón */
+}
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.footer{
+    font-family: 'anime_ace';
+    font-size: 1rem;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    background-color:white;
+    width: 100%;
+    height: 60px;
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+    box-sizing: border-box;
+    animation: slide 20s linear infinite;
+    display: inline-block;
 }
