@@ -99,10 +99,10 @@ a:hover{
     font-size: 1.9rem;
 }
 .a2{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .a2:hover{
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 .boton {
     display: inline-block; /* Permite usar padding y margin */
