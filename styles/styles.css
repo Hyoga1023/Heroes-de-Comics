@@ -59,8 +59,8 @@ strong {
 .image-container {
     background-color: blue; /* Color de fondo del contenedor */
     padding: 0; /* Espaciado alrededor de la imagen */
-    width: 700px;
-    height: 700px;
+    width: 600px;
+    height: 600px;
     display: flex;
     justify-content: center; /* Centra la imagen horizontalmente */
     align-items: center; /* Centra la imagen verticalmente */
@@ -78,11 +78,11 @@ strong {
     max-width: none; /* Permite que la imagen se desborde del contenedor */
     height: auto; /* Mantiene la relación de aspecto de la imagen */
     position: absolute; /* Permite que la imagen se posicione libremente dentro del contenedor */
-    width: 800px;
+    width: 700px;
     transition: width 0.5s ease-in-out; /* Transición suave para el cambio de tamaño */
 }
 .scale-effect:hover{
-    width: 1000px;
+    width: 900px;
 }
 ul{
     list-style-type: none;
