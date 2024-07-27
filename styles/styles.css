@@ -197,7 +197,7 @@ p{
     background-repeat: repeat;
     box-sizing: border-box; /* Asegura que el padding no aumente el ancho total */
     background-position-x: center; /* Ajusta la posición del fondo */
-    padding: 10px; /* Opcional: Agrega espacio interior */
+    padding: 20px; /* Opcional: Agrega espacio interior */
     background-size: 550%;
 }
 .logo {
@@ -255,30 +255,14 @@ p{
         transform: translateX(-100%);
     }   
 }
-.container_ironman {
-    background-color: black; /* Fondo negro para el contenedor */
-    box-sizing: border-box; /* Asegura que padding y border se incluyan en el tamaño total */
-    width: auto; /* Ajusta el ancho del contenedor */
-    height: 520px;
-    padding: 0% auto; /* Espaciado interno opcional */
-    text-align: center; /* Centra la imagen dentro del contenedor */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 5% auto;
-    overflow: hidden; /* Oculta la parte de la imagen que se desborda */
-}
-
 .imagen_ironman {
     transition: filter 1s; /* Transición suave para el filtro */
-    max-width: 100%; /* Asegura que la imagen no desborde el contenedor */
+    width: 100%; /* Asegura que la imagen no desborde el contenedor */
     height: auto; /* Mantiene la relación de aspecto de la imagen */
 }
 
 .imagen_ironman:hover {
-    filter: brightness(1.7); /* Efecto de brillo al pasar el ratón */
+    filter: brightness(3.5); /* Efecto de brillo al pasar el ratón */
 }
 .footer{
     font-family: 'anime_ace';
@@ -293,6 +277,6 @@ p{
     position: relative;
     bottom: 0;
     box-sizing: border-box;
-    animation: slide 20s linear infinite;
+    animation: slide 25s linear infinite;
     display: inline-block;
 }
