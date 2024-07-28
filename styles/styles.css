@@ -1,22 +1,25 @@
+/* Fuentes personalizadas */
 @font-face {
-    font-family:anime_ace;
+    font-family: anime_ace;
     src: url(/fuentes/anime_ace_bb/animeace2_reg.ttf);
 }
 @font-face {
-    font-family:Ka_blam;
+    font-family: Ka_blam;
     src: url(/fuentes/ka_blam/Ka\ Blam.ttf);
 }
-@font-face{
+@font-face {
     font-family: Bazinga;
     src: url(/fuentes/bazinga/Bazinga-Regular.otf);
 }
 
+/* Estilos globales */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* Estilo del body */
 body {
     background-image: url(/assets/papel_antiguo1.png);
     background-size: cover;
@@ -27,26 +30,31 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    padding-bottom: 100px; /* se puede ajustar */
-    overflow-x: hidden;
+    padding-bottom: 100px; /* Espacio al final de la página */
+    overflow-x: hidden; /* Oculta el desbordamiento horizontal */
 }
 
-
+/* Estilo del encabezado */
 header {
     background-color: black;
     padding: 1% 30%;
     font-family: 'anime_ace';
     font-size: 1.5rem;
 }
-img{
+
+/* Estilo de imágenes */
+img {
     display: block;
     width: 70%;
     margin: auto;
     padding: 40px;
 }
+
+/* Estilo para strong */
 strong {
     text-decoration: underline;
 }
+
 /* Definición de la animación */
 @keyframes scale-up {
     0% {
@@ -56,34 +64,34 @@ strong {
         transform: scale(1.2); /* Tamaño aumentado */
     }
     100% {
-        transform: scale(1); /* Tamaño final (vuelve al original) */
+        transform: scale(1); /* Tamaño final */
     }
 }
 
-/* Estilos para el contenedor */
+/* Estilo para contenedor de imágenes */
 .image-container {
     background-image: url(/assets/cielo1.png);
     padding: 0;
     width: 70%;
-    height: auto; /* Ajusta la altura automáticamente para evitar desbordamientos */
+    height: auto; /* Ajusta la altura automáticamente */
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 5% auto;
-    overflow: hidden; /* Oculta la parte de la imagen que se desborda */
+    overflow: hidden; /* Oculta la parte desbordante de la imagen */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
+/* Estilo para el efecto de escala */
 .scale-effect {
     animation: scale-up 2s ease-in-out;
     display: block;
     width: 80%; /* Ancho inicial de la imagen */
     height: auto;
-
     transition: transform 0.5s ease-in-out; /* Transición suave para el cambio de tamaño */
 }
 
@@ -91,44 +99,47 @@ strong {
     transform: scale(1.2); /* Aumenta el tamaño de la imagen en 20% */
 }
 
-ul{
+/* Estilo de listas */
+ul {
     list-style-type: none;
 }
-ul li{
+
+ul li {
     margin: 10%;
 }
-a{
+
+/* Estilo de enlaces */
+a {
     text-decoration: none;
     padding: 0% 0% 0% 10%;
     font-size: 1rem;
 }
-a:hover{
+
+a:hover {
     font-size: 1.5rem;
 }
-.a2{
-    font-size: 1.5rem;
-}
-.a2:hover{
-    font-size: 1.9rem;
-}
+
+/* Estilo de botones */
 .boton {
-    display: inline-block; /* Permite usar padding y margin */
-    padding: 10px 20px; /* Espaciado interno del botón */
-    font-size: 1rem; /* Tamaño de la fuente */
-    font-weight: bold; /* Grosor de la fuente */
-    color: white; /* Color del texto */
-    background-color: blue; /* Color de fondo */
-    border: 2px solid black; /* Borde del botón */
-    border-radius: 5px; /* Esquinas redondeadas */
-    text-decoration: none; /* Eliminar subrayado */
-    text-align: center; /* Centrar texto */
-    transition: background-color 1s, border-color 1s; /* Transiciones para hover */
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: blue;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 1s, border-color 1s;
 }
 
 .boton:hover {
-    background-color: red; /* Color de fondo al pasar el ratón */
-    border-color: red /* Color del borde al pasar el ratón */
+    background-color: red;
+    border-color: red;
 }
+
+/* Estilo de navegación */
 nav {
     display: flex;
     justify-content: center;
@@ -139,85 +150,95 @@ nav a {
     color: yellow;
     text-decoration: none;
 }
-nav a:hover{
+
+nav a:hover {
     font-size: 1.5rem;
 }
 
-h2{
+/* Estilos para encabezados */
+h2, h3, h4 {
     font-family: 'anime_ace';
-    font-size: 1.5rem;
     font-weight: bolder;
 }
-h3{
-    font-family: 'anime_ace';
+
+h2, h3, h4 {
     font-size: 1.5rem;
-    font-weight: bolder;
     margin-bottom: 40px;
 }
-h4{
-    font-family: 'anime_ace';
-    font-size: 1.5rem;
-    font-weight: bolder;
-    margin-bottom: 40px;
+
+h4 {
     background-color: black;
-    color: white; 
+    color: white;
 }
-p{
+
+/* Estilo de párrafos */
+p {
     font-family: 'anime_ace';
     font-size: 1.2rem;
     margin-bottom: 20px;
 }
+
+/* Estilo de columnas */
 .columna {
     padding: 30px;
     box-sizing: border-box;
 }
+
+/* Contenedor de columnas */
 .contenedor-columnas {
     display: flex;
-    flex: 1;
     gap: 5px;
 }
+
+/* Estilo de columna izquierda */
 .columna-izquierda {
     width: 20%;
     font-family: 'anime_ace';
     color: white;
     background-image: url('/assets/Comic.png');
-    background-size: auto; /* Mantiene el tamaño original de la imagen */
-    background-position: top left; /* Ajusta la posición del fondo */
-    background-repeat: repeat; /* Hace que la imagen se repita */
-    padding: 10px; /* Opcional: Agrega espacio interior */
-    box-sizing: border-box; /* Asegura que el padding no aumente el ancho total */
-    background-attachment: fixed; /* Opcional: mantiene la imagen fija al hacer scroll */
-}    
+    background-size: auto;
+    background-position: top left;
+    background-repeat: repeat;
+    padding: 10px;
+    box-sizing: border-box;
+    background-attachment: fixed;
+}
+
+/* Estilo de columna central */
 .columna-central {
-        width: 60%;
-        padding: 40px;
-        margin-bottom: 100px; /* Ajusta este valor si es necesario */
-        box-sizing: border-box;
-        position: relative; /* Asegúrate de que el contenedor se comporte como se espera */
-    }
+    width: 60%;
+    padding: 40px;
+    margin-bottom: 100px; /* Ajusta este valor si es necesario */
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Estilo de columna derecha */
 .columna-derecha {
     width: 20%;
     font-family: 'anime_ace';
     font-size: 0.5rem;
     color: white;
     background-image: url('/assets/marvel_gif.gif');
-    background-size: cover; /* Ajusta el tamaño del GIF */
-    background-position: 0; /* Ajusta la posición del GIF */
+    background-size: cover;
+    background-position: center;
     background-repeat: repeat;
-    box-sizing: border-box; /* Asegura que el padding no aumente el ancho total */
-    background-position-x: center; /* Ajusta la posición del fondo */
-    padding: 20px; /* Opcional: Agrega espacio interior */
-    background-size: 550%;
+    box-sizing: border-box;
+    padding: 20px;
 }
+
+/* Estilo del logo */
 .logo {
     width: 95%;
     transition: transform 0.3s ease;
 }
 
 .logo:hover {
-    transform: rotate(10deg); /* Rote la imagen 10 grados */
+    transform: rotate(10deg);
 }
-.titulo-principal{
+
+/* Estilo del título principal */
+.titulo-principal {
     display: flex;
     justify-content: center;
     font-family: 'Bazinga';
@@ -227,32 +248,35 @@ p{
     margin-bottom: 10px;
 }
 
-
-.titulo-izquierdo,
-.titulo-derecho {
+/* Estilo de títulos izquierdo y derecho */
+.titulo-izquierdo, .titulo-derecho {
     display: flex;
     justify-content: center;
 }
+
 /* Estilo para el botón "volver al inicio" */
 .scroll-to-top {
-    font-family: 'anime_ace'; /* Fuente personalizada para el botón */
-    position: fixed; /* Fija el botón en una posición específica en la pantalla */
-    bottom: 20px; /* Espacio desde el borde inferior de la pantalla */
-    left: 50%; /* Centra el botón horizontalmente */
-    transform: translateX(-50%); /* Ajusta la posición para que esté realmente centrado horizontalmente */
-    background-color: red; /* Color de fondo del botón */
-    color: white; /* Color del texto del botón */
-    border: none; /* Sin borde alrededor del botón */
-    border-radius: 5px; /* Bordes redondeados del botón */
-    padding: 10px 20px; /* Espacio interior del botón (arriba/abajo y izquierda/derecha) */
-    font-size: 20px; /* Tamaño del texto del botón */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
-    transition: background-color 1s, border-color 1s; /* Transición suave para el color de fondo y el borde al pasar el ratón */
+    font-family: 'anime_ace';
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 1s, border-color 1s;
 }
+
 .scroll-to-top:hover {
-    background-color: #0056b3; /* Color de fondo al pasar el mouse sobre el botón */
+    background-color: #0056b3;
 }
+
+/* Animación para el footer */
 @keyframes slide {
     0% {
         transform: translateX(100%);
@@ -262,24 +286,27 @@ p{
     }
     100% {
         transform: translateX(-100%);
-    }   
+    }
 }
+
+/* Estilo de la imagen de Ironman */
 .imagen_ironman {
-    transition: filter 1s; /* Transición suave para el filtro */
-    width: 100%; /* Asegura que la imagen no desborde el contenedor */
-    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    transition: filter 1s;
+    width: 100%;
+    height: auto;
 }
 
 .imagen_ironman:hover {
-    filter: brightness(3.5); /* Efecto de brillo al pasar el ratón */
+    filter: brightness(3.5);
 }
-.footer{
+
+/* Estilo del footer */
+.footer {
     font-family: 'anime_ace';
     font-size: 1rem;
     text-align: center;
     color: black;
     padding: 10px;
-    background-color: none;
     width: 100%;
     height: 60px;
     margin-top: auto;
@@ -289,6 +316,7 @@ p{
     animation: slide 25s linear infinite;
     display: inline-block;
 }
+
 /* Estilos generales para pantallas pequeñas (móviles) */
 @media (max-width: 767px) {
     header {
@@ -297,26 +325,27 @@ p{
     }
     
     .contenedor-columnas {
-        flex-direction: column;
+        flex-direction: column; /* Cambia la dirección del contenedor a columna en pantallas pequeñas */
     }
     
     .columna-izquierda,
     .columna-central,
     .columna-derecha {
-        width: 100%;
-        padding: 10px;
+        width: 100%; /* Ancho completo para cada columna */
+        padding: 10px; /* Ajusta el padding */
     }
     
-    .columna-izquierda,
+    .columna-izquierda {
+        order: 2; /* Coloca la columna izquierda después de la columna central */
+        margin-bottom: 20px; /* Ajusta el margen inferior */
+    }
+    
     .columna-derecha {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
+        order: 1; /* Coloca la columna derecha antes de la columna izquierda */
     }
     
     .columna-central {
-        width: 100%;
-        padding: 10px;
+        margin-bottom: 20px; /* Ajusta el margen inferior */
     }
     
     .titulo-principal {
@@ -347,8 +376,8 @@ p{
     }
     
     .scroll-to-top {
-        font-size: 16px; /* Reduce el tamaño del texto del botón en pantallas pequeñas */
-        bottom: 20px; /* Mantiene el espacio desde el borde inferior en pantallas pequeñas */
+        font-size: 16px;
+        bottom: 20px;
     }
     
     .footer {
@@ -366,7 +395,7 @@ p{
     }
     
     .contenedor-columnas {
-        flex-direction: row;
+        flex-direction: row; /* Mantiene la dirección de las columnas en orientación vertical */
     }
     
     .columna-izquierda,
