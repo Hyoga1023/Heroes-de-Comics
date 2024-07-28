@@ -44,6 +44,23 @@ header {
     justify-content: space-between; /* Distribuye el contenido horizontalmente */
     align-items: center; /* Centra verticalmente el contenido */
 }
+/* Estilo de navegación */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+nav a {
+    color: yellow;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px;
+    display: inline-block;
+}
+nav a:hover {
+    font-size: 1.5rem;
+}
 
 /* Estilo de imágenes */
 img {
@@ -141,27 +158,6 @@ ul li {
     background-color: red;
     border-color: red;
 }
-
-/* Estilo de navegación */
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-nav a {
-    color: yellow;
-    text-decoration: none;
-    font-size: 1rem;
-    padding: 10px;
-    display: inline-block;
-}
-
-nav a:hover {
-    font-size: 1.5rem;
-}
-
 /* Estilos para encabezados */
 h2, h3, h4 {
     font-family: 'anime_ace';
@@ -376,11 +372,14 @@ p {
     nav {
         flex-direction: row; /* Cambia la dirección de los enlaces de navegación a columna */
         align-items: center; /* Centra los enlaces en la columna */
+        margin:auto;
+        gap: 5px;
     }
-    
-    nav a {
-        font-size: 1.2rem; /* Ajusta el tamaño de la fuente de los enlaces en pantallas pequeñas */
-        margin: 10px 0; /* Ajusta el margen entre los enlaces */
+    .a1{
+        font-size: 0.6rem; /* Ajusta el tamaño de la fuente de los enlaces en pantallas pequeñas */
+        gap: 3px;
+        align-items:center; /* Centra los enlaces en la columna */
+
     }
     
     .scroll-to-top {
