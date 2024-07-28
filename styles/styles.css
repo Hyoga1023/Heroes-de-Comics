@@ -289,3 +289,113 @@ p{
     animation: slide 25s linear infinite;
     display: inline-block;
 }
+/* Estilos generales para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+    header {
+        padding: 1% 5%;
+        font-size: 1.2rem;
+    }
+    
+    .contenedor-columnas {
+        flex-direction: column;
+    }
+    
+    .columna-izquierda,
+    .columna-central,
+    .columna-derecha {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .columna-izquierda,
+    .columna-derecha {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    
+    .columna-central {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .titulo-principal {
+        font-size: 2rem;
+    }
+    
+    .scale-effect {
+        width: 100%;
+    }
+    
+    .logo {
+        width: 100%;
+    }
+    
+    img {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav a {
+        font-size: 1.2rem;
+        margin: 10px 0;
+    }
+    
+    .scroll-to-top {
+        font-size: 16px;
+        bottom: 20px;
+    }
+    
+    .footer {
+        font-size: 0.8rem;
+        height: auto;
+        padding: 10px 5px;
+    }
+}
+
+/* Estilos para tablets en orientación vertical */
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        padding: 1% 10%;
+        font-size: 1.3rem;
+    }
+    
+    .contenedor-columnas {
+        flex-direction: row;
+    }
+    
+    .columna-izquierda,
+    .columna-central,
+    .columna-derecha {
+        width: 33.33%;
+        padding: 20px;
+    }
+    
+    .columna-central {
+        width: 50%;
+    }
+    
+    .titulo-principal {
+        font-size: 3rem;
+    }
+    
+    img {
+        width: 100%;
+        padding: 30px;
+    }
+    
+    .scroll-to-top {
+        font-size: 18px;
+    }
+    
+    .footer {
+        font-size: 1rem;
+        height: auto;
+        padding: 10px;
+    }
+}
