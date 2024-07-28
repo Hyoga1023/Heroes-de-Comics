@@ -146,12 +146,16 @@ ul li {
 nav {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
 nav a {
     color: yellow;
     text-decoration: none;
+    font-size: 1rem;
+    padding: 10px;
+    display: inline-block;
 }
 
 nav a:hover {
@@ -370,7 +374,7 @@ p {
     }
     
     nav {
-        flex-direction: column; /* Cambia la dirección de los enlaces de navegación a columna */
+        flex-direction: row; /* Cambia la dirección de los enlaces de navegación a columna */
         align-items: center; /* Centra los enlaces en la columna */
     }
     
