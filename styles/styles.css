@@ -376,7 +376,7 @@ p {
         gap: 5px;
     }
     .a1{
-        font-size: 0.6rem; /* Ajusta el tamaño de la fuente de los enlaces en pantallas pequeñas */
+        font-size: 1rem; /* Ajusta el tamaño de la fuente de los enlaces en pantallas pequeñas */
         gap: 3px;
         align-items:center; /* Centra los enlaces en la columna */
 
