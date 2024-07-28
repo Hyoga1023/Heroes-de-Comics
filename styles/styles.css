@@ -37,9 +37,12 @@ body {
 /* Estilo del encabezado */
 header {
     background-color: black;
-    padding: 1% 30%;
+    padding: 0% 45%;
     font-family: 'anime_ace';
     font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between; /* Distribuye el contenido horizontalmente */
+    align-items: center; /* Centra verticalmente el contenido */
 }
 
 /* Estilo de imágenes */
@@ -109,14 +112,14 @@ ul li {
 }
 
 /* Estilo de enlaces */
-a {
+.a1 {
     text-decoration: none;
-    padding: 0% 0% 0% 10%;
-    font-size: 1rem;
+    padding: 0% 20%;
+    font-size: 1.5rem;
 }
 
-a:hover {
-    font-size: 1.5rem;
+.a1:hover {
+    font-size: 2rem;
 }
 
 /* Estilo de botones */
@@ -320,8 +323,10 @@ p {
 /* Estilos generales para pantallas pequeñas (móviles) */
 @media (max-width: 767px) {
     header {
-        padding: 1% 5%;
-        font-size: 1.2rem;
+        padding: 1% 10%; /* Ajusta el padding horizontal para pantallas pequeñas */
+        font-size: 1.2rem; /* Ajusta el tamaño de la fuente del encabezado */
+        flex-direction: row; /* Mantiene el encabezado en línea horizontal */
+        flex-wrap: wrap; /* Permite que el contenido del encabezado envuelva en pantallas más pequeñas */
     }
     
     .contenedor-columnas {
@@ -336,43 +341,42 @@ p {
     }
     
     .columna-izquierda {
-        order: 2; /* Coloca la columna izquierda después de la columna central */
-        margin-bottom: 20px; /* Ajusta el margen inferior */
-    }
-    
-    .columna-derecha {
-        order: 1; /* Coloca la columna derecha antes de la columna izquierda */
+        order: 2; /* Cambia el orden de la columna izquierda en pantallas pequeñas */
     }
     
     .columna-central {
-        margin-bottom: 20px; /* Ajusta el margen inferior */
+        order: 1; /* Cambia el orden de la columna central para que sea la primera */
+    }
+    
+    .columna-derecha {
+        order: 3; /* Cambia el orden de la columna derecha en pantallas pequeñas */
     }
     
     .titulo-principal {
-        font-size: 2rem;
+        font-size: 2.5rem; /* Ajusta el tamaño de la fuente del título principal */
     }
     
     .scale-effect {
-        width: 100%;
+        width: 100%; /* Asegura que la imagen de escala ocupe el 100% del ancho disponible */
     }
     
     .logo {
-        width: 100%;
+        width: 100%; /* Asegura que el logo ocupe el 100% del ancho disponible */
     }
     
     img {
-        width: 100%;
+        width: 100%; /* Ajusta el ancho de las imágenes a 100% en pantallas pequeñas */
         padding: 20px;
     }
     
     nav {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Cambia la dirección de los enlaces de navegación a columna */
+        align-items: center; /* Centra los enlaces en la columna */
     }
     
     nav a {
-        font-size: 1.2rem;
-        margin: 10px 0;
+        font-size: 1.2rem; /* Ajusta el tamaño de la fuente de los enlaces en pantallas pequeñas */
+        margin: 10px 0; /* Ajusta el margen entre los enlaces */
     }
     
     .scroll-to-top {
@@ -382,7 +386,6 @@ p {
     
     .footer {
         font-size: 0.8rem;
-        height: auto;
         padding: 10px 5px;
     }
 }
@@ -424,7 +427,6 @@ p {
     
     .footer {
         font-size: 1rem;
-        height: auto;
         padding: 10px;
     }
 }
