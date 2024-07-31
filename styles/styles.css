@@ -319,13 +319,13 @@ p {
 /* Animación para el footer */
 @keyframes slide-footer {
     0% {
-        transform: translateX(80%);
+        transform: translateX(50%);
     }
     50% {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-80%);
+        transform: translateX(-50%);
     }
 }
 
