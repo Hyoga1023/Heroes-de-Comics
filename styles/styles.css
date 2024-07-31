@@ -149,7 +149,7 @@ strong {
 .pendulum {
     position: absolute; /* Debe ser absoluto para posicionarse dentro del contenedor */
     top: 0; /* Alinea Spiderman a la parte superior del contenedor */
-    left: 8%; /* Centra Spiderman horizontalmente en el contenedor */
+    left: 7%; /* Centra Spiderman horizontalmente en el contenedor */
     transform: translateX(-50%); /* Ajusta la posición horizontal de Spiderman */
     width: 30%; /* Ajusta el tamaño de Spiderman según sea necesario */
     transform-origin: top center; /* Ajusta el punto de origen de la transformación */
