@@ -319,13 +319,13 @@ p {
 /* Animación para el footer */
 @keyframes slide-footer {
     0% {
-        transform: translateX(100%);
+        transform: translateX(80%);
     }
     50% {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-80%);
     }
 }
 
@@ -393,6 +393,7 @@ p {
         font-size: 1.2rem; /* Ajusta el tamaño de la fuente del encabezado */
         flex-direction: row; /* Mantiene el encabezado en línea horizontal */
         flex-wrap: wrap; /* Permite que el contenido del encabezado envuelva en pantallas más pequeñas */
+        width: 100%;
     }
     body{
         background-size: cover;
@@ -468,6 +469,7 @@ p {
     header {
         padding: 1% 10%;
         font-size: 1.3rem;
+        width: 100%;
     }
     
     .contenedor-columnas {
