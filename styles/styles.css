@@ -134,7 +134,7 @@ strong {
 .ciudad-container {
     position: relative;
     width: 100%; /* Asegúrate de que el contenedor ocupa el 100% del ancho disponible */
-    height: 400px; /* Ajusta la altura según sea necesario */
+    height: 450px; /* Ajusta la altura según sea necesario */
     background-image: url(/assets/Ciudad.png);
     background-size: cover;
     background-position: center;
@@ -148,8 +148,8 @@ strong {
 /* Estilo para Spiderman */
 .pendulum {
     position: absolute; /* Debe ser absoluto para posicionarse dentro del contenedor */
-    top: 1; /* Alinea Spiderman a la parte superior del contenedor */
-    left: 25%; /* Centra Spiderman horizontalmente en el contenedor */
+    top: 0; /* Alinea Spiderman a la parte superior del contenedor */
+    left: 8%; /* Centra Spiderman horizontalmente en el contenedor */
     transform: translateX(-50%); /* Ajusta la posición horizontal de Spiderman */
     width: 30%; /* Ajusta el tamaño de Spiderman según sea necesario */
     transform-origin: top center; /* Ajusta el punto de origen de la transformación */
@@ -317,7 +317,7 @@ p {
 }
 
 /* Animación para el footer */
-@keyframes slide {
+@keyframes slide-footer {
     0% {
         transform: translateX(100%);
     }
@@ -353,8 +353,37 @@ p {
     position: relative;
     bottom: 0;
     box-sizing: border-box;
-    animation: slide 25s linear infinite;
+    animation: slide-footer 25s linear infinite;
     display: inline-block;
+}
+
+/* Definición de la animación */
+@keyframes slide-image {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-100px); }
+    100% { transform: translateX(0); }
+}
+
+/* Estilo de la imagen */
+.slide-avengers {
+    animation: slide-image 3s infinite;
+}
+/* Definición de la animación */
+@keyframes grayscale {
+    0% {
+        filter: grayscale(0%); /* Sin escala de grises al inicio */
+    }
+    50% {
+        filter: grayscale(100%); /* Totalmente en escala de grises en el punto medio */
+    }
+    100% {
+        filter: grayscale(0%); /* Regresa a color al final */
+    }
+}
+
+/* Estilo para la imagen con animación de escala de grises */
+.avengers-grayscale {
+    animation: grayscale 5s infinite; /* Duración de la animación y repetición infinita */
 }
 
 /* Estilos generales para pantallas pequeñas (móviles) */
