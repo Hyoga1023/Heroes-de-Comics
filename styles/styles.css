@@ -328,7 +328,11 @@ p {
         flex-direction: row; /* Mantiene el encabezado en línea horizontal */
         flex-wrap: wrap; /* Permite que el contenido del encabezado envuelva en pantallas más pequeñas */
     }
-    
+    .body{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
     .contenedor-columnas {
         flex-direction: column; /* Cambia la dirección del contenedor a columna en pantallas pequeñas */
     }
@@ -373,7 +377,7 @@ p {
         flex-direction: row; /* Cambia la dirección de los enlaces de navegación a columna */
         align-items: center; /* Centra los enlaces en la columna */
         margin:auto;
-        gap: 5px;
+        gap: 4px;
     }
     .a1{
         font-size: 1rem; /* Ajusta el tamaño de la fuente de los enlaces en pantallas pequeñas */
