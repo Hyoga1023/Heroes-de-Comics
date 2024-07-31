@@ -22,9 +22,9 @@
 /* Estilo del body */
 body {
     background-image: url(/assets/papel_antiguo1.png);
-    background-size: cover;
+    background-size: 65%;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -223,7 +223,7 @@ p {
     font-size: 0.5rem;
     color: white;
     background-image: url('/assets/marvel_gif.gif');
-    background-size: cover;
+    background-size: 400%;
     background-position: center;
     background-repeat: repeat;
     box-sizing: border-box;
