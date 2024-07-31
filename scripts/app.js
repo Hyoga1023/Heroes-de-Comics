@@ -12,3 +12,13 @@ window.addEventListener('scroll', function() {
         button.style.display = 'none';
     }
 });
+document.addEventListener("DOMContentLoaded", function() {
+    const spiderman = document.querySelector(".pendulum");
+    if (spiderman) {
+        spiderman.classList.add("scale-effect");
+    }
+});
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
