@@ -316,19 +316,6 @@ p {
     background-color: #0056b3;
 }
 
-/* Animación para el footer */
-@keyframes slide-footer {
-    0% {
-        transform: translateX(50%);
-    }
-    50% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
 /* Estilo de la imagen de Ironman */
 .imagen_ironman {
     transition: filter 1s;
