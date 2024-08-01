@@ -514,6 +514,7 @@ p {
     }
     .poridentidad2::after{
         width: auto;
+        padding: 0;
     }
     .titulo-principal {
         font-size: 3rem;
