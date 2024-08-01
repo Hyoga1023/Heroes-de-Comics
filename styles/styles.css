@@ -372,7 +372,6 @@ p {
         filter: grayscale(0%); /* Regresa a color al final */
     }
 }
-
 /* Estilo para la imagen con animación de escala de grises */
 .avengers-grayscale {
     animation: grayscale 5s infinite; /* Duración de la animación y repetición infinita */
@@ -464,18 +463,10 @@ p {
         width: 100%;
     }
     /* Estilo para Spiderman */
-.pendulum {
-    position: absolute; /* Debe ser absoluto para posicionarse dentro del contenedor */
-    top: 0; /* Alinea Spiderman a la parte superior del contenedor */
-    left: 6%; /* Centra Spiderman horizontalmente en el contenedor */
-    transform: translateX(-50%); /* Ajusta la posición horizontal de Spiderman */
+    .pendulum {
     width: 70%; /* Ajusta el tamaño de Spiderman según sea necesario */
-    transform-origin: top center; /* Ajusta el punto de origen de la transformación */
-    animation: pendulum 2s infinite; /* Añade la animación de péndulo */
 }
-
-
-    .contenedor-columnas {
+   .contenedor-columnas {
         flex-direction: row; /* Mantiene la dirección de las columnas en orientación vertical */
     }
     
