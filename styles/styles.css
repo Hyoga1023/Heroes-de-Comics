@@ -512,7 +512,9 @@ p {
     .columna-central {
         width: 50%;
     }
-    
+    .poridentidad2::after{
+        width: auto;
+    }
     .titulo-principal {
         font-size: 3rem;
     }
