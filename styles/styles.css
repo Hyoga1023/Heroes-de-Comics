@@ -175,6 +175,34 @@ ul li {
 .a1:hover {
     font-size: 2rem;
 }
+.poridentidad2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.poridentidad2::after {
+    content: "Multiverso";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: white; /* Color del texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem; /* Tamaño de fuente */
+    font-family: 'anime_ace'; /* Fuente del texto */
+    filter: blur(5px);
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    z-index: 1; /* Asegura que el pseudoelemento esté encima del contenido */
+}
+
+.poridentidad2:hover::after {
+    opacity: 1;
+}
 
 /* Estilo de botones */
 .boton {
