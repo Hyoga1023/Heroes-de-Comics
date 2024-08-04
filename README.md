@@ -2,6 +2,9 @@
 
 ¡Bienvenido a Historia de los Cómics de Superhéroes Americanos! Este proyecto es una página web dedicada a explorar el fascinante mundo de los cómics de superhéroes que han definido y transformado la cultura popular en Estados Unidos.
 
+![image](https://github.com/user-attachments/assets/def79f8c-f70b-43cc-86ca-e6e5864d1a8b)
+
+
 <h2>Descripción</h2>
 
 En esta página, descubrirás un recorrido detallado por la historia de los superhéroes más icónicos y sus aventuras. Desde los primeros héroes de los años 30 hasta las epopeyas modernas, nuestro sitio proporciona una visión integral de cómo los cómics han evolucionado a lo largo de las décadas.
