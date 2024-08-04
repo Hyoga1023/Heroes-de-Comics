@@ -43,13 +43,14 @@ header {
     display: flex;
     justify-content: space-between; /* Distribuye el contenido horizontalmente */
     align-items: center; /* Centra verticalmente el contenido */
+    margin left: 8px;
 }
 /* Estilo de navegación */
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 nav a {
     color: yellow;
@@ -396,7 +397,8 @@ p {
         font-size: 1.2rem; /* Ajusta el tamaño de la fuente del encabezado */
         flex-direction: row; /* Mantiene el encabezado en línea horizontal */
         flex-wrap: wrap; /* Permite que el contenido del encabezado envuelva en pantallas más pequeñas */
-        width: 100%;
+        width left: 3px;  
+     
     }
     body{
         background-size: cover;
