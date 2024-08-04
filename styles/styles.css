@@ -447,7 +447,7 @@ p {
         flex-direction: row; /* Cambia la dirección de los enlaces de navegación a columna */
         align-items: center; /* Centra los enlaces en la columna */
         width: 20%;
-        margin-left: 100px;
+        margin-left: 130px;
         gap: 1px;
     }
     .a1{
