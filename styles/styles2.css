@@ -141,6 +141,12 @@ nav a:hover {
     .icons{
         padding: 30px;
     }
+    header {
+        padding: 1% 10%; /* Ajusta el padding horizontal para pantallas pequeñas */
+        font-size: 1.2rem; /* Ajusta el tamaño de la fuente del encabezado */
+        flex-direction: row; /* Mantiene el encabezado en línea horizontal */
+        flex-wrap: wrap; /* Permite que el contenido del encabezado envuelva en pantallas más pequeñas */
+    }
     nav {
         flex-direction: row; /* Cambia la dirección de los enlaces de navegación a columna */
         align-items: center; /* Centra los enlaces en la columna */
