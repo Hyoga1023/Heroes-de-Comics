@@ -16,6 +16,36 @@
     background-position: center;
     background-repeat: repeat;
 }
+/* Estilo del encabezado */
+header {
+    background-color: black;
+    padding: 0% 45%;
+    font-family: 'anime_ace';
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between; /* Distribuye el contenido horizontalmente */
+    align-items: center; /* Centra verticalmente el contenido */
+    margin left: 8px;
+}
+/* Estilo de navegación */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    gap: 4px;
+}
+nav a {
+    color: yellow;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px;
+    display: inline-block;
+}
+nav a:hover {
+    font-size: 1.5rem;
+}
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -111,5 +141,17 @@
     .icons{
         padding: 30px;
     }
+    nav {
+        flex-direction: row; /* Cambia la dirección de los enlaces de navegación a columna */
+        align-items: center; /* Centra los enlaces en la columna */
+        width: 20%;
+        margin-left: 130px;
+        gap: 1px;
+    }
+    .a1{
+        font-size: 0.7rem; /* Ajusta el tamaño de la fuente de los enlaces en pantallas pequeñas */
+        gap: 1px;
+        align-items:center; /* Centra los enlaces en la columna */
 
+    }
 }
