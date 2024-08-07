@@ -4,7 +4,7 @@ grabCursor: true,
 centeredSlides: true,
 slidesPerView: "auto",
 coverflowEffect: {
-    rotate: 15,
+    rotate: 50,
     strech: 0,
     depth:300,
     modifier:1,
