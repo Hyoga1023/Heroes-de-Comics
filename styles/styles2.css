@@ -162,4 +162,7 @@ body{
         align-items:center; /* Centra los enlaces en la columna */
 
     }
+    .footer{
+        font-size: 0.5rem;
+    }
 }
