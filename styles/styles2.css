@@ -28,16 +28,17 @@ nav {
     gap: 10px;
     width: 100%;
     gap: 4px;
+    font-size: 1.5rem;
 }
 nav a {
     color: yellow;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 10px;
     display: inline-block;
 }
 nav a:hover {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 body{
     height: 100vh;
@@ -78,6 +79,7 @@ body{
     padding: 50px 0 150px 0;
 }
 .img h2{
+    color: white;
     font-size: 25px;
     font-weight: 400;
     margin-bottom: 20px;
