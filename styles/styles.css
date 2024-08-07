@@ -391,7 +391,6 @@ p {
 .avengers-grayscale {
     animation: grayscale 5s infinite; /* Duración de la animación y repetición infinita */
 }
-
 /* Estilos generales para pantallas pequeñas (móviles) */
 @media (max-width: 767px) {
     header {

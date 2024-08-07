@@ -1,0 +1,103 @@
+/* Fuentes personalizadas */
+@font-face {
+    font-family: anime_ace;
+    src: url(/fuentes/anime_ace_bb/animeace2_reg.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: anime_ace;
+}
+ body{
+    height: 100vh;
+    background-image: url(/assets/papel_antiguo1.png);
+    background-size: 65%;
+    background-position: center;
+    background-repeat: repeat;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.search{
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search i{
+    font-size: 25px;
+    color: #111111;
+}
+.search-txt{
+    display: flex;
+    align-items: center;    
+}
+.search-txt i{
+    font-size: 40px;
+    color: #F8010A;
+} 
+.search-txt h2{
+    color: #111111;
+    font-size: 30px;
+    margin-left: 10px;
+}
+.img{
+    padding: 50px 0 150px 0;
+}
+.img h2{
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.swiper{
+    width: 100%;
+}
+.swiper-slide{
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+}
+.swiper-slide img{
+    display: block;
+    width: 100%;
+}
+.icons{
+    padding: 0 350px 50px 350px;
+    display: flex;
+    justify-content: space-between;
+}
+.icons i{
+    font-size: 25px;
+    color: #111111;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons i:hover{
+    color: #F8010A;
+    background-color: #FEFEFE;
+    box-shadow: 0 0 20PX rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+} 
+@media(max-width:991px){
+    body{
+        min-height: 0vh;
+        background-size: cover;
+    }
+    .search{
+        padding: 30px 30px 0 30px;
+    }
+    .img{
+        padding: 30px;
+    }
+    .icons{
+        padding: 30px;
+    }
+
+}
