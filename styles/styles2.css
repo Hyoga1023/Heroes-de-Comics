@@ -9,17 +9,10 @@
     box-sizing: border-box;
     font-family: anime_ace;
 }
- body{
-    height: 100vh;
-    background-image: url(/assets/papel_antiguo1.png);
-    background-size: 65%;
-    background-position: center;
-    background-repeat: repeat;
-}
 /* Estilo del encabezado */
 header {
     background-color: black;
-    padding: 0% 45%;
+    padding: 20px 0;
     font-family: 'anime_ace';
     font-size: 1.5rem;
     display: flex;
@@ -46,6 +39,13 @@ nav a {
 nav a:hover {
     font-size: 1.5rem;
 }
+body{
+    height: 100vh;
+    background-image: url(/assets/marvel_gif.gif);
+    background-size: 170%;
+    background-position: center;
+    background-repeat: repeat;
+}
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -59,7 +59,7 @@ nav a:hover {
 }
 .search i{
     font-size: 25px;
-    color: #111111;
+    color: white;
 }
 .search-txt{
     display: flex;
@@ -70,7 +70,7 @@ nav a:hover {
     color: #F8010A;
 } 
 .search-txt h2{
-    color: #111111;
+    color: white;
     font-size: 30px;
     margin-left: 10px;
 }
@@ -101,7 +101,7 @@ nav a:hover {
 }
 .icons i{
     font-size: 25px;
-    color: #111111;
+    color: white;
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -112,14 +112,14 @@ nav a:hover {
 .icons i:hover{
     color: #F8010A;
     background-color: #FEFEFE;
-    box-shadow: 0 0 20PX rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20PX rgba(245, 241, 241, 0.2);
     cursor: pointer;
 } 
 .footer {
     font-family: 'anime_ace';
     font-size: 1rem;
     text-align: center;
-    color: black;
+    color: white;
     padding: 10px;
     width: 100%;
     height: 60px;
