@@ -173,4 +173,7 @@ body{
     .footer{
         font-size: 0.5rem;
     }
+    .logo_Des{
+        width: 30%;
+    }
 }

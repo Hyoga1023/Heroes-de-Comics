@@ -379,7 +379,7 @@ p {
 .logo_Desarrollador{
     display: flex;
     justify-content: center;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
 }
 .logo_Des{
     width: 30%;
@@ -476,6 +476,9 @@ p {
         font-size: 0.8rem;
         padding: 10px 5px;
     }
+    .logo_Des{
+        width: 30%;
+    }
 }
 
 /* Estilos para tablets en orientación vertical */
@@ -524,5 +527,8 @@ p {
     .footer {
         font-size: 1rem;
         padding: 10px;
+    }
+    .logo_Des{
+        width: 30%;
     }
 }
