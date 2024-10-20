@@ -129,6 +129,14 @@ body{
     position: relative;
     bottom: 0;
 }
+.logo_Desarrollador{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+.logo_Des{
+    width: 30%;
+}
 @media(max-width:991px){
     body{
         min-height: 0vh;
