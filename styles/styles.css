@@ -43,8 +43,9 @@ header {
     display: flex;
     justify-content: space-between; /* Distribuye el contenido horizontalmente */
     align-items: center; /* Centra verticalmente el contenido */
-    margin left: 8px;
+    margin-left: 8px;
 }
+
 /* Estilo de navegación */
 nav {
     display: flex;
@@ -374,6 +375,13 @@ p {
 /* Estilo de la imagen */
 .slide-avengers {
     animation: slide-image 3s infinite;
+}
+.logo_Desarrollador{
+    display: flex;
+    justify-content: center;
+}
+.logo_Des{
+    width: 30%;
 }
 /* Definición de la animación */
 @keyframes grayscale {
